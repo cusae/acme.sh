@@ -60,8 +60,8 @@ dns_bookmyname_add() {
   _debug "Result: $result"
 
   if ! _startswith "$result" 'good: update done, cid '; then
-	  _err "Can't add $fulldomain"
-	  return 1
+    _err "Can't add $fulldomain"
+    return 1
   fi
 
 }
